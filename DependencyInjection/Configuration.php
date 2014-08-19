@@ -28,6 +28,12 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('seed')
                     ->defaultValue(1)
                 ->end()
+                ->arrayNode('parameters')
+                    ->defaultValue(array())
+                    ->useAttributeAsKey('key')
+                    ->prototype('scalar')
+                    ->end()
+                ->end()
             ->end();
 
         return $treeBuilder;

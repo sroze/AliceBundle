@@ -15,6 +15,7 @@
             <argument>%hautelook_alice.locale%</argument>
             <argument type="collection"/>
             <argument>%hautelook_alice.seed%</argument>
+            <argument>%hautelook_alice.parameters%</argument>
         </service>
 
         <service id="hautelook_alice.loader" class="%hautelook_alice.loader.class%">
